@@ -17,3 +17,5 @@ download bootstrap.min.css from bootswatch and keep in the same level of index.c
 for cdn go to cdn js
 put the link tag in index.html
 then use font awesome in the code
+
+npm i react-router-dom react-router-bootstrap
