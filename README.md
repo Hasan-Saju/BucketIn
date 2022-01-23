@@ -24,3 +24,6 @@ after creating backend folder
 from root
 npm init
 npm i express
+
+in front end:
+npm i axios (to connect front and backend)
