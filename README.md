@@ -27,3 +27,11 @@ npm i express
 
 in front end:
 npm i axios (to connect front and backend)
+
+To run both server concurrently
+come to root
+
+<!-- installing as dev dependency -->
+
+npm i -D nodemon concurrently
+then write scripts for nodemon, server and client server
