@@ -28,6 +28,8 @@ npm i express
 in front end:
 npm i axios (to connect front and backend)
 
+have to set proxy to run both server concurrently
+
 To run both server concurrently
 come to root
 
@@ -38,3 +40,7 @@ then write scripts for nodemon, server and client server
 
 dotenv setup:
 npm i dotenv
+
+to import as react style
+import react from 'react'
+add "type":module in package.json
