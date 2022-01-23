@@ -19,3 +19,8 @@ put the link tag in index.html
 then use font awesome in the code
 
 npm i react-router-dom react-router-bootstrap
+
+after creating backend folder
+from root
+npm init
+npm i express
