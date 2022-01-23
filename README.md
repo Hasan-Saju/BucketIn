@@ -35,3 +35,6 @@ come to root
 
 npm i -D nodemon concurrently
 then write scripts for nodemon, server and client server
+
+dotenv setup:
+npm i dotenv
