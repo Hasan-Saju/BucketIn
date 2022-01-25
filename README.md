@@ -44,3 +44,6 @@ npm i dotenv
 to import as react style
 import react from 'react'
 add "type":module in package.json
+
+After frontend everything wil be installed from root
+npm i mongoose
