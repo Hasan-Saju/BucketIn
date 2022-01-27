@@ -48,3 +48,6 @@ add "type":module in package.json
 After frontend everything wil be installed from root
 npm i mongoose
 npm i bcryptjs
+
+again for frontend
+npm i redux react-redux redux-thunk redux-devtools-extension
