@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
-import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap";
-import Rating from "../components/Rating";
-import axios from "axios";
+import React, { useState, useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap';
+import Rating from '../components/Rating';
+import axios from 'axios';
 
 const ProductScreen = () => {
   let productID = useParams();
@@ -10,11 +10,11 @@ const ProductScreen = () => {
   const [product, setProduct] = useState({});
 
   useEffect(() => {
+    console.log(productID.id);
+    console.log('PS');
     const fetchProduct = async () => {
-      const { data } = await axios.get(
-        `/api/products/${parseInt(productID.id)}`
-      );
-
+      // const { data } = await axios.get(`/api/products/${parseInt(productID.id)}`); chilo
+      const { data } = await axios.get(`/api/products/${productID.id}`);
       setProduct(data);
     };
 
@@ -62,7 +62,7 @@ const ProductScreen = () => {
                 <Row>
                   <Col>Status:</Col>
                   <Col>
-                    {product.countInStock > 0 ? "In Stock" : "Out of Stock"}
+                    {product.countInStock > 0 ? 'In Stock' : 'Out of Stock'}
                   </Col>
                 </Row>
               </ListGroup.Item>
