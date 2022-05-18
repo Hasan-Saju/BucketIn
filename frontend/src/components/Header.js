@@ -1,6 +1,6 @@
-import React from "react";
-import { LinkContainer } from "react-router-bootstrap";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import React from 'react';
+import { LinkContainer } from 'react-router-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 const Header = () => {
   return (
     <header>
@@ -15,12 +15,12 @@ const Header = () => {
             <Nav className='ms-auto'>
               <LinkContainer to='/cart'>
                 <Nav.Link>
-                  <i className='fas fa-shopping-cart'></i>
+                  <i className='fas fa-shopping-cart'> CART</i>
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to='/login'>
                 <Nav.Link>
-                  <i className='fas fa-user'></i>
+                  <i className='fas fa-user'> SIGN IN</i>
                 </Nav.Link>
               </LinkContainer>
             </Nav>
