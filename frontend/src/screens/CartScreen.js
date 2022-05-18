@@ -11,7 +11,7 @@ import {
   Card,
 } from 'react-bootstrap';
 import Message from '../components/Message';
-import { addToCart } from '../actions/cartActions';
+import { addToCart, removeFromCart } from '../actions/cartActions';
 import { useNavigate } from 'react-router-dom';
 
 const CartScreen = ({ location }) => {
@@ -33,7 +33,7 @@ const CartScreen = ({ location }) => {
   }, [dispatch, productId, qty]);
 
   const removeFromCartHandler = (id) => {
-    console.log('remove');
+    dispatch(removeFromCart(id));
   };
 
   const navigate = useNavigate();
