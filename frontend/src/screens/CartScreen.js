@@ -38,6 +38,7 @@ const CartScreen = ({ location }) => {
 
   const navigate = useNavigate();
   const checkoutHandler = () => {
+    // navigate('/shipping');
     navigate('/login?redirect=shipping');
   };
 
