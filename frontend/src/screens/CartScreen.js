@@ -21,6 +21,10 @@ const CartScreen = ({ location }) => {
   let product = useParams();
   const productId = product.id;
 
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
+  let path;
+
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
@@ -30,7 +34,7 @@ const CartScreen = ({ location }) => {
     if (productId) {
       dispatch(addToCart(productId, qty));
     }
-  }, [dispatch, productId, qty]);
+  }, [dispatch, productId, qty, userInfo]);
 
   const removeFromCartHandler = (id) => {
     dispatch(removeFromCart(id));
@@ -38,8 +42,13 @@ const CartScreen = ({ location }) => {
 
   const navigate = useNavigate();
   const checkoutHandler = () => {
-    // navigate('/shipping');
-    navigate('/login?redirect=shipping');
+    if (!userInfo) {
+      navigate('/login');
+    } else {
+      navigate('/shipping');
+    }
+    // path = '/login?redirect=shipping';
+    // navigate('/login?redirect=shipping');
   };
 
   return (

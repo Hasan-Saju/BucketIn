@@ -18,7 +18,7 @@ const Header = () => {
       <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect='default'>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>BucketIn</Navbar.Brand>
+            <Navbar.Brand>Empora</Navbar.Brand>
           </LinkContainer>
 
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
